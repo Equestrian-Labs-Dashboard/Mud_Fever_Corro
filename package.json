@@ -1,0 +1,14 @@
+{
+  "name": "mud-fever-sales-report",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static GitHub Pages dashboard generated from Shopify by GitHub Actions.",
+  "type": "commonjs",
+  "scripts": {
+    "generate": "node scripts/generate-report-data.js",
+    "check": "node --check scripts/generate-report-data.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
