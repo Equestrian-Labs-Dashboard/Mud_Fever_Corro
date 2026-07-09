@@ -1,0 +1,44 @@
+name: Update Mud Fever Report Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 10 * * *' # daily 10:20 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  update-report-data:
+    runs-on: ubuntu-latest
+    env:
+      SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+      SHOPIFY_TOKEN: ${{ secrets.SHOPIFY_TOKEN }}
+      SHOPIFY_API_VERSION: ${{ vars.SHOPIFY_API_VERSION || '2024-01' }}
+      MUD_FEVER_INITIAL_STOCK_RECEIVED: ${{ vars.MUD_FEVER_INITIAL_STOCK_RECEIVED }}
+      MUD_FEVER_STOCK_RECEIVED_DATE: ${{ vars.MUD_FEVER_STOCK_RECEIVED_DATE }}
+      MUD_FEVER_SKU: ${{ vars.MUD_FEVER_SKU }}
+      MUD_FEVER_LOCATION_ID: ${{ vars.MUD_FEVER_LOCATION_ID }}
+      MUD_FEVER_LOCATION_NAME: ${{ vars.MUD_FEVER_LOCATION_NAME }}
+      MUD_FEVER_WHOLESALE_PRICE: ${{ vars.MUD_FEVER_WHOLESALE_PRICE }}
+      MUD_FEVER_DEDUCT_MARKETING_SHIPPING: ${{ vars.MUD_FEVER_DEDUCT_MARKETING_SHIPPING }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate script syntax
+        run: npm run check
+
+      - name: Generate Shopify report data
+        run: npm run generate
+
+      - name: Commit updated report data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update Mud Fever report data
+          file_pattern: data/report-data.json
