@@ -504,7 +504,39 @@ async function fetchMudFeverLiveInventory_() {
   try {
     const hasSku = !!MUD_FEVER_SKU;
     const searchQuery = hasSku ? `sku:${MUD_FEVER_SKU}` : MUD_FEVER_KEYWORD;
-    const query = 'query($q:String!){ productVariants(first:50, query:$q){ edges{ node{ id sku title product{ title } inventoryItem{ id inventoryLevels(first:50){ edges{ node{ location{ id name } quantities(names:["available"]){ name quantity } } } } } } } } } }';
+    const query = `
+      query MudFeverInventory($q: String!) {
+        productVariants(first: 50, query: $q) {
+          edges {
+            node {
+              id
+              sku
+              title
+              product {
+                title
+              }
+              inventoryItem {
+                id
+                inventoryLevels(first: 50) {
+                  edges {
+                    node {
+                      location {
+                        id
+                        name
+                      }
+                      quantities(names: ["available"]) {
+                        name
+                        quantity
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `;
     const data = await shopGraphql_(query, { q: searchQuery });
     const edges = data?.data?.productVariants?.edges || [];
     if (!edges.length) {
