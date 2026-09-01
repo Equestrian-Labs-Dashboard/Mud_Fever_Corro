@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "generated_at": "2026-08-31T17:50:13.819Z",
-  "default_key": "month:2026:7",
+  "generated_at": "2026-09-01T15:06:02.483Z",
+  "default_key": "month:2026:8",
   "report_name": "Mud Fever Sales Report",
   "brand_name": "Mud Fever",
   "source_rule": "Product title / line item title contains \"Mud Fever\"",
@@ -130,8 +130,20 @@
     ],
     "months": [
       {
+        "key": "month:2026:9",
+        "label": "September 2026 (month in progress)",
+        "params": {
+          "mode": "month",
+          "year": 2026,
+          "month": 9,
+          "startISO": "2026-09-01",
+          "endISO": "2026-09-30",
+          "label": "September 2026"
+        }
+      },
+      {
         "key": "month:2026:8",
-        "label": "August 2026 (month in progress)",
+        "label": "August 2026",
         "params": {
           "mode": "month",
           "year": 2026,
@@ -260,18 +272,6 @@
           "endISO": "2025-10-31",
           "label": "October 2025"
         }
-      },
-      {
-        "key": "month:2025:9",
-        "label": "September 2025",
-        "params": {
-          "mode": "month",
-          "year": 2025,
-          "month": 9,
-          "startISO": "2025-09-01",
-          "endISO": "2025-09-30",
-          "label": "September 2025"
-        }
       }
     ],
     "quarters": [
@@ -350,10 +350,117 @@
     ]
   },
   "reports": {
+    "month:2026:9": {
+      "ok": true,
+      "generated": "9/1/2026, 10:57:30 AM",
+      "generated_at": "2026-09-01T14:57:30.489Z",
+      "period_label": "September 2026",
+      "period_key": "month:2026:9",
+      "report_name": "Mud Fever Sales Report",
+      "brand_name": "Mud Fever",
+      "source_rule": "Product title / line item title contains \"Mud Fever\"",
+      "summary": {
+        "gross_sales": 0,
+        "units_in_range": 0,
+        "net_sales": 0,
+        "order_count": 0,
+        "discount": 0,
+        "cogs": 0,
+        "commercial_units_sold": 0,
+        "marketing_units_seeded": 0,
+        "credit_units": 0,
+        "initial_stock_received": null,
+        "stock_received_date": "",
+        "current_shopify_stock_available": 1456,
+        "calculated_remaining": 1456,
+        "cumulative_units_sold": 0,
+        "cumulative_marketing_units": 0,
+        "starting_balance": 1456,
+        "ending_balance": 1456,
+        "wholesale_price": 0,
+        "invoicing_basis": 0,
+        "marketing_shipping_deductions": 0,
+        "credits_adjustments": 0,
+        "deductions_credits_total": 0,
+        "net_total_to_invoice": 0,
+        "commercial_gross_sales": 0,
+        "commercial_net_sales": 0,
+        "commercial_discount": 0,
+        "commercial_cogs": 0,
+        "commercial_order_count": 0,
+        "marketing_gross_value": 0,
+        "marketing_net_sales": 0,
+        "marketing_cogs": 0,
+        "marketing_order_count": 0
+      },
+      "inventory_status": {
+        "initial_stock_received": null,
+        "stock_received_date": "",
+        "sku": "",
+        "inventory_lookup": "Product title contains: Mud Fever",
+        "location_id": "63267766330",
+        "location_name": "New Wellington Warehouse",
+        "inventory_mode": "live_shopify_stock_fallback",
+        "period_opening_balance": 1456,
+        "period_ending_balance": 1456,
+        "calculated_remaining": 1456,
+        "cumulative_commercial_units": 0,
+        "cumulative_marketing_units": 0,
+        "cumulative_total_units": 0,
+        "current_shopify_stock_available": 1456,
+        "total_shopify_stock_available": 1485,
+        "inventory_item_id": "43341049593914",
+        "matched_variants_count": 1,
+        "matched_skus": [
+          "MUDF6.7"
+        ],
+        "inventory_locations": [
+          {
+            "location_id": "63267766330",
+            "location_gid": "gid://shopify/Location/63267766330",
+            "location_name": "New Wellington Warehouse",
+            "available": 1456
+          },
+          {
+            "location_id": "64281542714",
+            "location_gid": "gid://shopify/Location/64281542714",
+            "location_name": "Drop Ship",
+            "available": 0
+          },
+          {
+            "location_id": "67063775290",
+            "location_gid": "gid://shopify/Location/67063775290",
+            "location_name": "Corro Trailer 1",
+            "available": 29
+          }
+        ],
+        "warning": "MUD_FEVER_INITIAL_STOCK_RECEIVED and MUD_FEVER_STOCK_RECEIVED_DATE are not configured. Opening/ending stock use live Shopify stock fallback."
+      },
+      "rows": [],
+      "reps": [],
+      "stats": {
+        "total_orders_scanned": 18,
+        "mud_fever_orders": 0,
+        "mud_fever_lines": 0,
+        "atletix_lines": 0,
+        "cogs_missing_lines": 0,
+        "cogs_missing_variant_count": 0,
+        "keyword": "mud fever"
+      },
+      "warnings": [
+        "MUD_FEVER_INITIAL_STOCK_RECEIVED and MUD_FEVER_STOCK_RECEIVED_DATE are not configured. Opening/ending stock use live Shopify stock fallback."
+      ],
+      "config": {
+        "keyword": "mud fever",
+        "brand_name": "Mud Fever",
+        "cogs_source": "Shopify Inventory Item cost via variant.inventory_item_id",
+        "permissions_needed": "read_orders, read_products, read_inventory"
+      }
+    },
     "month:2026:8": {
       "ok": true,
-      "generated": "8/31/2026, 1:38:38 PM",
-      "generated_at": "2026-08-31T17:38:38.816Z",
+      "generated": "9/1/2026, 10:57:34 AM",
+      "generated_at": "2026-09-01T14:57:34.250Z",
       "period_label": "August 2026",
       "period_key": "month:2026:8",
       "report_name": "Mud Fever Sales Report",
@@ -688,7 +795,7 @@
       ],
       "reps": [],
       "stats": {
-        "total_orders_scanned": 318,
+        "total_orders_scanned": 320,
         "mud_fever_orders": 4,
         "mud_fever_lines": 8,
         "atletix_lines": 8,
@@ -708,8 +815,8 @@
     },
     "month:2026:7": {
       "ok": true,
-      "generated": "8/31/2026, 1:38:55 PM",
-      "generated_at": "2026-08-31T17:38:55.810Z",
+      "generated": "9/1/2026, 10:57:40 AM",
+      "generated_at": "2026-09-01T14:57:40.951Z",
       "period_label": "July 2026",
       "period_key": "month:2026:7",
       "report_name": "Mud Fever Sales Report",
@@ -940,8 +1047,8 @@
     },
     "month:2026:6": {
       "ok": true,
-      "generated": "8/31/2026, 1:39:09 PM",
-      "generated_at": "2026-08-31T17:39:09.865Z",
+      "generated": "9/1/2026, 10:57:45 AM",
+      "generated_at": "2026-09-01T14:57:45.383Z",
       "period_label": "June 2026",
       "period_key": "month:2026:6",
       "report_name": "Mud Fever Sales Report",
@@ -1420,8 +1527,8 @@
     },
     "month:2026:5": {
       "ok": true,
-      "generated": "8/31/2026, 1:39:31 PM",
-      "generated_at": "2026-08-31T17:39:31.040Z",
+      "generated": "9/1/2026, 10:57:52 AM",
+      "generated_at": "2026-09-01T14:57:52.814Z",
       "period_label": "May 2026",
       "period_key": "month:2026:5",
       "report_name": "Mud Fever Sales Report",
@@ -1559,8 +1666,8 @@
     },
     "month:2026:4": {
       "ok": true,
-      "generated": "8/31/2026, 1:39:44 PM",
-      "generated_at": "2026-08-31T17:39:44.403Z",
+      "generated": "9/1/2026, 10:57:56 AM",
+      "generated_at": "2026-09-01T14:57:56.953Z",
       "period_label": "April 2026",
       "period_key": "month:2026:4",
       "report_name": "Mud Fever Sales Report",
@@ -1764,8 +1871,8 @@
     },
     "month:2026:3": {
       "ok": true,
-      "generated": "8/31/2026, 1:39:56 PM",
-      "generated_at": "2026-08-31T17:39:56.133Z",
+      "generated": "9/1/2026, 10:58:01 AM",
+      "generated_at": "2026-09-01T14:58:01.888Z",
       "period_label": "March 2026",
       "period_key": "month:2026:3",
       "report_name": "Mud Fever Sales Report",
@@ -1965,8 +2072,8 @@
     },
     "month:2026:2": {
       "ok": true,
-      "generated": "8/31/2026, 1:40:12 PM",
-      "generated_at": "2026-08-31T17:40:12.691Z",
+      "generated": "9/1/2026, 10:58:07 AM",
+      "generated_at": "2026-09-01T14:58:07.197Z",
       "period_label": "February 2026",
       "period_key": "month:2026:2",
       "report_name": "Mud Fever Sales Report",
@@ -2259,8 +2366,8 @@
     },
     "month:2026:1": {
       "ok": true,
-      "generated": "8/31/2026, 1:40:33 PM",
-      "generated_at": "2026-08-31T17:40:33.509Z",
+      "generated": "9/1/2026, 10:58:14 AM",
+      "generated_at": "2026-09-01T14:58:14.297Z",
       "period_label": "January 2026",
       "period_key": "month:2026:1",
       "report_name": "Mud Fever Sales Report",
@@ -2522,8 +2629,8 @@
     },
     "month:2025:12": {
       "ok": true,
-      "generated": "8/31/2026, 1:41:03 PM",
-      "generated_at": "2026-08-31T17:41:03.803Z",
+      "generated": "9/1/2026, 10:58:22 AM",
+      "generated_at": "2026-09-01T14:58:22.261Z",
       "period_label": "December 2025",
       "period_key": "month:2025:12",
       "report_name": "Mud Fever Sales Report",
@@ -2629,8 +2736,8 @@
     },
     "month:2025:11": {
       "ok": true,
-      "generated": "8/31/2026, 1:41:20 PM",
-      "generated_at": "2026-08-31T17:41:20.753Z",
+      "generated": "9/1/2026, 10:58:27 AM",
+      "generated_at": "2026-09-01T14:58:27.518Z",
       "period_label": "November 2025",
       "period_key": "month:2025:11",
       "report_name": "Mud Fever Sales Report",
@@ -2736,8 +2843,8 @@
     },
     "month:2025:10": {
       "ok": true,
-      "generated": "8/31/2026, 1:41:43 PM",
-      "generated_at": "2026-08-31T17:41:43.938Z",
+      "generated": "9/1/2026, 10:58:32 AM",
+      "generated_at": "2026-09-01T14:58:32.484Z",
       "period_label": "October 2025",
       "period_key": "month:2025:10",
       "report_name": "Mud Fever Sales Report",
@@ -2841,117 +2948,10 @@
         "permissions_needed": "read_orders, read_products, read_inventory"
       }
     },
-    "month:2025:9": {
-      "ok": true,
-      "generated": "8/31/2026, 1:42:14 PM",
-      "generated_at": "2026-08-31T17:42:14.970Z",
-      "period_label": "September 2025",
-      "period_key": "month:2025:9",
-      "report_name": "Mud Fever Sales Report",
-      "brand_name": "Mud Fever",
-      "source_rule": "Product title / line item title contains \"Mud Fever\"",
-      "summary": {
-        "gross_sales": 0,
-        "units_in_range": 0,
-        "net_sales": 0,
-        "order_count": 0,
-        "discount": 0,
-        "cogs": 0,
-        "commercial_units_sold": 0,
-        "marketing_units_seeded": 0,
-        "credit_units": 0,
-        "initial_stock_received": null,
-        "stock_received_date": "",
-        "current_shopify_stock_available": 1456,
-        "calculated_remaining": 1456,
-        "cumulative_units_sold": 0,
-        "cumulative_marketing_units": 0,
-        "starting_balance": 1456,
-        "ending_balance": 1456,
-        "wholesale_price": 0,
-        "invoicing_basis": 0,
-        "marketing_shipping_deductions": 0,
-        "credits_adjustments": 0,
-        "deductions_credits_total": 0,
-        "net_total_to_invoice": 0,
-        "commercial_gross_sales": 0,
-        "commercial_net_sales": 0,
-        "commercial_discount": 0,
-        "commercial_cogs": 0,
-        "commercial_order_count": 0,
-        "marketing_gross_value": 0,
-        "marketing_net_sales": 0,
-        "marketing_cogs": 0,
-        "marketing_order_count": 0
-      },
-      "inventory_status": {
-        "initial_stock_received": null,
-        "stock_received_date": "",
-        "sku": "",
-        "inventory_lookup": "Product title contains: Mud Fever",
-        "location_id": "63267766330",
-        "location_name": "New Wellington Warehouse",
-        "inventory_mode": "live_shopify_stock_fallback",
-        "period_opening_balance": 1456,
-        "period_ending_balance": 1456,
-        "calculated_remaining": 1456,
-        "cumulative_commercial_units": 0,
-        "cumulative_marketing_units": 0,
-        "cumulative_total_units": 0,
-        "current_shopify_stock_available": 1456,
-        "total_shopify_stock_available": 1485,
-        "inventory_item_id": "43341049593914",
-        "matched_variants_count": 1,
-        "matched_skus": [
-          "MUDF6.7"
-        ],
-        "inventory_locations": [
-          {
-            "location_id": "63267766330",
-            "location_gid": "gid://shopify/Location/63267766330",
-            "location_name": "New Wellington Warehouse",
-            "available": 1456
-          },
-          {
-            "location_id": "64281542714",
-            "location_gid": "gid://shopify/Location/64281542714",
-            "location_name": "Drop Ship",
-            "available": 0
-          },
-          {
-            "location_id": "67063775290",
-            "location_gid": "gid://shopify/Location/67063775290",
-            "location_name": "Corro Trailer 1",
-            "available": 29
-          }
-        ],
-        "warning": "MUD_FEVER_INITIAL_STOCK_RECEIVED and MUD_FEVER_STOCK_RECEIVED_DATE are not configured. Opening/ending stock use live Shopify stock fallback."
-      },
-      "rows": [],
-      "reps": [],
-      "stats": {
-        "total_orders_scanned": 1005,
-        "mud_fever_orders": 0,
-        "mud_fever_lines": 0,
-        "atletix_lines": 0,
-        "cogs_missing_lines": 0,
-        "cogs_missing_variant_count": 0,
-        "keyword": "mud fever"
-      },
-      "warnings": [
-        "MUD_FEVER_INITIAL_STOCK_RECEIVED and MUD_FEVER_STOCK_RECEIVED_DATE are not configured. Opening/ending stock use live Shopify stock fallback."
-      ],
-      "config": {
-        "keyword": "mud fever",
-        "brand_name": "Mud Fever",
-        "cogs_source": "Shopify Inventory Item cost via variant.inventory_item_id",
-        "permissions_needed": "read_orders, read_products, read_inventory"
-      }
-    },
     "quarter:2026:3": {
       "ok": true,
-      "generated": "8/31/2026, 1:42:24 PM",
-      "generated_at": "2026-08-31T17:42:24.131Z",
+      "generated": "9/1/2026, 10:58:40 AM",
+      "generated_at": "2026-09-01T14:58:40.059Z",
       "period_label": "Q3 2026",
       "period_key": "quarter:2026:3",
       "report_name": "Mud Fever Sales Report",
@@ -3410,7 +3410,7 @@
       ],
       "reps": [],
       "stats": {
-        "total_orders_scanned": 884,
+        "total_orders_scanned": 889,
         "mud_fever_orders": 7,
         "mud_fever_lines": 12,
         "atletix_lines": 12,
@@ -3430,8 +3430,8 @@
     },
     "quarter:2026:2": {
       "ok": true,
-      "generated": "8/31/2026, 1:42:37 PM",
-      "generated_at": "2026-08-31T17:42:37.321Z",
+      "generated": "9/1/2026, 10:58:50 AM",
+      "generated_at": "2026-09-01T14:58:50.672Z",
       "period_label": "Q2 2026",
       "period_key": "quarter:2026:2",
       "report_name": "Mud Fever Sales Report",
@@ -4038,8 +4038,8 @@
     },
     "quarter:2026:1": {
       "ok": true,
-      "generated": "8/31/2026, 1:42:52 PM",
-      "generated_at": "2026-08-31T17:42:52.523Z",
+      "generated": "9/1/2026, 10:59:01 AM",
+      "generated_at": "2026-09-01T14:59:01.370Z",
       "period_label": "Q1 2026",
       "period_key": "quarter:2026:1",
       "report_name": "Mud Fever Sales Report",
@@ -4580,8 +4580,8 @@
     },
     "quarter:2025:4": {
       "ok": true,
-      "generated": "8/31/2026, 1:43:12 PM",
-      "generated_at": "2026-08-31T17:43:12.575Z",
+      "generated": "9/1/2026, 10:59:17 AM",
+      "generated_at": "2026-09-01T14:59:17.727Z",
       "period_label": "Q4 2025",
       "period_key": "quarter:2025:4",
       "report_name": "Mud Fever Sales Report",
@@ -4687,8 +4687,8 @@
     },
     "quarter:2025:3": {
       "ok": true,
-      "generated": "8/31/2026, 1:44:17 PM",
-      "generated_at": "2026-08-31T17:44:17.632Z",
+      "generated": "9/1/2026, 11:00:35 AM",
+      "generated_at": "2026-09-01T15:00:35.226Z",
       "period_label": "Q3 2025",
       "period_key": "quarter:2025:3",
       "report_name": "Mud Fever Sales Report",
@@ -4794,8 +4794,8 @@
     },
     "quarter:2025:2": {
       "ok": true,
-      "generated": "8/31/2026, 1:47:25 PM",
-      "generated_at": "2026-08-31T17:47:25.802Z",
+      "generated": "9/1/2026, 11:03:34 AM",
+      "generated_at": "2026-09-01T15:03:34.062Z",
       "period_label": "Q2 2025",
       "period_key": "quarter:2025:2",
       "report_name": "Mud Fever Sales Report",
@@ -4901,8 +4901,8 @@
     },
     "quarter:2025:1": {
       "ok": true,
-      "generated": "8/31/2026, 1:48:36 PM",
-      "generated_at": "2026-08-31T17:48:36.515Z",
+      "generated": "9/1/2026, 11:04:41 AM",
+      "generated_at": "2026-09-01T15:04:41.373Z",
       "period_label": "Q1 2025",
       "period_key": "quarter:2025:1",
       "report_name": "Mud Fever Sales Report",
@@ -5008,8 +5008,8 @@
     },
     "quarter:2024:4": {
       "ok": true,
-      "generated": "8/31/2026, 1:49:46 PM",
-      "generated_at": "2026-08-31T17:49:46.132Z",
+      "generated": "9/1/2026, 11:05:41 AM",
+      "generated_at": "2026-09-01T15:05:41.759Z",
       "period_label": "Q4 2024",
       "period_key": "quarter:2024:4",
       "report_name": "Mud Fever Sales Report",
@@ -5115,8 +5115,8 @@
     },
     "week:2026-08-31:2026-09-06": {
       "ok": true,
-      "generated": "8/31/2026, 1:49:47 PM",
-      "generated_at": "2026-08-31T17:49:47.568Z",
+      "generated": "9/1/2026, 11:05:42 AM",
+      "generated_at": "2026-09-01T15:05:42.967Z",
       "period_label": "This week · Aug 31 – Sep 6",
       "period_key": "week:2026-08-31:2026-09-06",
       "report_name": "Mud Fever Sales Report",
@@ -5202,7 +5202,7 @@
       "rows": [],
       "reps": [],
       "stats": {
-        "total_orders_scanned": 27,
+        "total_orders_scanned": 34,
         "mud_fever_orders": 0,
         "mud_fever_lines": 0,
         "atletix_lines": 0,
@@ -5222,8 +5222,8 @@
     },
     "week:2026-08-24:2026-08-30": {
       "ok": true,
-      "generated": "8/31/2026, 1:49:49 PM",
-      "generated_at": "2026-08-31T17:49:49.097Z",
+      "generated": "9/1/2026, 11:05:44 AM",
+      "generated_at": "2026-09-01T15:05:44.143Z",
       "period_label": "Last week · Aug 24 – Aug 30",
       "period_key": "week:2026-08-24:2026-08-30",
       "report_name": "Mud Fever Sales Report",
@@ -5329,8 +5329,8 @@
     },
     "week:2026-08-17:2026-08-23": {
       "ok": true,
-      "generated": "8/31/2026, 1:49:51 PM",
-      "generated_at": "2026-08-31T17:49:51.702Z",
+      "generated": "9/1/2026, 11:05:46 AM",
+      "generated_at": "2026-09-01T15:05:46.145Z",
       "period_label": "Aug 17 – Aug 23",
       "period_key": "week:2026-08-17:2026-08-23",
       "report_name": "Mud Fever Sales Report",
@@ -5561,8 +5561,8 @@
     },
     "week:2026-08-10:2026-08-16": {
       "ok": true,
-      "generated": "8/31/2026, 1:49:54 PM",
-      "generated_at": "2026-08-31T17:49:54.194Z",
+      "generated": "9/1/2026, 11:05:48 AM",
+      "generated_at": "2026-09-01T15:05:48.090Z",
       "period_label": "Aug 10 – Aug 16",
       "period_key": "week:2026-08-10:2026-08-16",
       "report_name": "Mud Fever Sales Report",
@@ -5793,8 +5793,8 @@
     },
     "week:2026-08-03:2026-08-09": {
       "ok": true,
-      "generated": "8/31/2026, 1:49:55 PM",
-      "generated_at": "2026-08-31T17:49:55.717Z",
+      "generated": "9/1/2026, 11:05:49 AM",
+      "generated_at": "2026-09-01T15:05:49.241Z",
       "period_label": "Aug 3 – Aug 9",
       "period_key": "week:2026-08-03:2026-08-09",
       "report_name": "Mud Fever Sales Report",
@@ -5900,8 +5900,8 @@
     },
     "week:2026-07-27:2026-08-02": {
       "ok": true,
-      "generated": "8/31/2026, 1:49:57 PM",
-      "generated_at": "2026-08-31T17:49:57.199Z",
+      "generated": "9/1/2026, 11:05:50 AM",
+      "generated_at": "2026-09-01T15:05:50.381Z",
       "period_label": "Jul 27 – Aug 2",
       "period_key": "week:2026-07-27:2026-08-02",
       "report_name": "Mud Fever Sales Report",
@@ -6007,8 +6007,8 @@
     },
     "week:2026-07-20:2026-07-26": {
       "ok": true,
-      "generated": "8/31/2026, 1:49:59 PM",
-      "generated_at": "2026-08-31T17:49:59.936Z",
+      "generated": "9/1/2026, 11:05:52 AM",
+      "generated_at": "2026-09-01T15:05:52.456Z",
       "period_label": "Jul 20 – Jul 26",
       "period_key": "week:2026-07-20:2026-07-26",
       "report_name": "Mud Fever Sales Report",
@@ -6146,8 +6146,8 @@
     },
     "week:2026-07-13:2026-07-19": {
       "ok": true,
-      "generated": "8/31/2026, 1:50:03 PM",
-      "generated_at": "2026-08-31T17:50:03.138Z",
+      "generated": "9/1/2026, 11:05:54 AM",
+      "generated_at": "2026-09-01T15:05:54.732Z",
       "period_label": "Jul 13 – Jul 19",
       "period_key": "week:2026-07-13:2026-07-19",
       "report_name": "Mud Fever Sales Report",
@@ -6347,8 +6347,8 @@
     },
     "week:2026-07-06:2026-07-12": {
       "ok": true,
-      "generated": "8/31/2026, 1:50:05 PM",
-      "generated_at": "2026-08-31T17:50:05.120Z",
+      "generated": "9/1/2026, 11:05:55 AM",
+      "generated_at": "2026-09-01T15:05:55.862Z",
       "period_label": "Jul 6 – Jul 12",
       "period_key": "week:2026-07-06:2026-07-12",
       "report_name": "Mud Fever Sales Report",
@@ -6454,8 +6454,8 @@
     },
     "week:2026-06-29:2026-07-05": {
       "ok": true,
-      "generated": "8/31/2026, 1:50:07 PM",
-      "generated_at": "2026-08-31T17:50:07.672Z",
+      "generated": "9/1/2026, 11:05:57 AM",
+      "generated_at": "2026-09-01T15:05:57.828Z",
       "period_label": "Jun 29 – Jul 5",
       "period_key": "week:2026-06-29:2026-07-05",
       "report_name": "Mud Fever Sales Report",
@@ -6561,8 +6561,8 @@
     },
     "week:2026-06-22:2026-06-28": {
       "ok": true,
-      "generated": "8/31/2026, 1:50:10 PM",
-      "generated_at": "2026-08-31T17:50:10.462Z",
+      "generated": "9/1/2026, 11:05:59 AM",
+      "generated_at": "2026-09-01T15:05:59.837Z",
       "period_label": "Jun 22 – Jun 28",
       "period_key": "week:2026-06-22:2026-06-28",
       "report_name": "Mud Fever Sales Report",
@@ -6855,8 +6855,8 @@
     },
     "week:2026-06-15:2026-06-21": {
       "ok": true,
-      "generated": "8/31/2026, 1:50:13 PM",
-      "generated_at": "2026-08-31T17:50:13.169Z",
+      "generated": "9/1/2026, 11:06:01 AM",
+      "generated_at": "2026-09-01T15:06:01.833Z",
       "period_label": "Jun 15 – Jun 21",
       "period_key": "week:2026-06-15:2026-06-21",
       "report_name": "Mud Fever Sales Report",
